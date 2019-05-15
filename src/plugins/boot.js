@@ -16,11 +16,14 @@ FastClick.attach(document.body);
 // 开发环境显示
 if(process.env.NODE_ENV === 'development') {
   // 移动端
-  if(window.navigator.platform === 'Win32') {
+  //if(window.navigator.platform === 'Win32') {
+
     // 移动端调试插件
     let VConsole = require('vconsole/dist/vconsole.min.js')
     new VConsole() // 初始化
-  } else {
+    console.log('asda111111')
+  //} else {
+    console.log('asdasd121212')
     // 电脑端
     let { Notify } = require('quasar')
     // 挂载 plus 值
@@ -46,7 +49,7 @@ if(process.env.NODE_ENV === 'development') {
         closeSplashscreen() {}
       }
     }
-  }
+ // }
 }
 // "boot" 命名的插件具有特殊意义，需要手动初始化实例，new Vue()
 export default ({ app, router, store, Vue }) => {

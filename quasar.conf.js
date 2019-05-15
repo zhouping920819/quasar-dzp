@@ -49,7 +49,7 @@ module.exports = function(ctx) {
     devServer: {
       // https: true,
       // port: 8080,
-      open: false, // opens browser window automatically
+      open: true, // opens browser window automatically
       proxy: {
         '/api/v2/remote': {
           target: 'http://rms.groupinno.com/api/register/loginurl',
