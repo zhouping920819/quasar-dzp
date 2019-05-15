@@ -1,0 +1,55 @@
+// app global css
+body
+  //background-color: #efefef;
+
+.alert-color-box
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  display: inline-block;
+  
+  &.red{
+    background-color: red;
+  }
+  &.orange{
+    background-color: orange;
+  }
+  &.yellow{
+    background-color: yellow;
+  }
+  &.green{
+    background-color: green;
+  }
+
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+
+  tr{
+    th, td{
+      border: 1px solid rgba(0, 0, 0, .1);
+      padding: 1px 0;
+    }
+    
+    &:not(:first-child, :last-child) {
+      th, td{
+        border-bottom: none;
+      }
+    }
+
+    th{
+      // background-color: #33bfff;
+      // color: #ffffff;
+      font-weight: 400;
+    }
+  }
+}
+
+// 无限滚动底部显示，加载、无数据
+.infinite-bottom-box {
+  margin: 15px 0 0 0;
+  color: #6b6b6b;
+}
