@@ -1,6 +1,8 @@
 // import something here
 import { date } from 'quasar'
 import * as utils from 'src/utils';
+import 'vant/lib/index.css'
+
 /** 自定义组件 */
 import breadcrumbs from 'components/breadcrumbs-select.vue'
 import PieChart from 'components/Charts/PieChart.vue'
@@ -36,7 +38,7 @@ export default ({ app, router, Vue }) => {
     },
     /**
      * 下载wgt文件
-     * @param {String} wgtUrl 
+     * @param {String} wgtUrl
      */
     downWgt(wgtUrl) {
       plus.nativeUI.showWaiting("下载wgt文件...");
@@ -52,7 +54,7 @@ export default ({ app, router, Vue }) => {
     },
     /**
      * 更新应用资源
-     * @param {*} path 
+     * @param {*} path
      */
     installWgt(path) {
       plus.nativeUI.showWaiting("安装wgt文件...");
